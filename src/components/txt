@@ -1,0 +1,24 @@
+WARMUP:
+
+1. Create a Vue project called axios_cookies, connect to GitHub
+  1.1. Install axios and vue-cookies with npm
+2. Configure your debugger
+3. Delete all usage of HelloWorld in App.vue, and then delete HelloWorld
+4. Create a new component called DisplaySelection, use it in App.vue
+  4.1. Listen for a global event "new_display" that will send an image URL
+  4.2. Show the new image URL on the page with an image tag
+  4.3. Only one image should be shown at a time!
+5. Create a new component called DogButton, use it in App.vue
+  5.1 When the button is clicked:
+    5.1.1. Send an axios request to https://dog.ceo/api/breeds/image/random
+    5.1.2. Send a global event called "new_display" that sends the image URL
+    5.1.3. Store a value of "dog" in a cookie called "selection"
+6. Create a new component called CatButton, use it in App.vue
+  6.1 When the button is clicked:
+    6.1.1. Send an axios request to https://aws.random.cat/meow
+    6.1.2. Send a global event called "new_display" that sends the image URL
+    6.1.3. Store a value of "cat" in a cookie called "selection"
+7. Modify DogButton to check and see if the selection cookie is set to dog on mounted
+  7.1. If yes, make the axios request to get the dog image URL and send the "new_display" event
+7. Modify CatButton to check and see if the selection cookie is set to cat on mounted
+  7.1. If yes, make the axios request to get the cat image URL and send the "new_display" event

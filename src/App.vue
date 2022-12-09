@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <DisplaySelection />
+    <DogButton />
+    <CatButton />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DisplaySelection from "@/components/DisplaySelection.vue";
+import DogButton from "@/components/DogButton.vue";
+import CatButton from "@/components/CatButton.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    DisplaySelection,
+    DogButton,
+    CatButton,
+  },
+};
 </script>
 
 <style>
